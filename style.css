@@ -1,0 +1,135 @@
+@import url("https://cdn.fontcdn.ir/Font/Persian/Lotus/Lotus.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+:root {
+  --primaryColor: #6d28d9;
+  --secondaryColor: #ede9fe;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGray: #7c7c7c;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s liner;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+  --font: Lotus;
+}
+body {
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  font-family: var(--font), sans-serif;
+  background-color: var(--bodyColor);
+  position: relative;
+}
+.navbar {
+  position: sticky;
+  background-color: var(--secondaryColor);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  padding: 0 10px;
+}
+.navbar-center {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.menu-icon {
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.nav-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primaryColor);
+}
+.cart-icon {
+  position: relative;
+  color: var(--primaryColor);
+
+  cursor: pointer;
+}
+
+.cart-icon i,
+.menu-icon i {
+  font-size: 2rem;
+}
+.cart-items {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--mainGray);
+  color: var(--mainWhite);
+  bottom: 0rem;
+  left: 0rem;
+}
+
+.items {
+  /* width: 1080px; */
+  background-color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 1rem;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primaryColor);
+  margin: 1rem 0;
+}
+
+.item-center {
+  max-width: 1080px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  column-gap: 4rem;
+  row-gap: 5rem;
+}
+.img-product {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  min-height: 120px;
+  border-radius: 10px 10px 0 0;
+}
+
+.img-item {
+  width: 100%;
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+  min-height: 120px;
+}
+.product-dsc {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin: 5px 0;
+}
+.add-to-cart {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+  padding: 5px 20px;
+  margin: 5px 100px;
+  outline: none;
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
